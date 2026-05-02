@@ -289,6 +289,127 @@
     width: 10px; height: 10px;
     border-radius: 50%;
   }
+
+
+
+/* =========================
+   📱 MOBILE OPTIMIZATION
+   ========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    padding: 20px 12px 40px;
+  }
+
+  /* HEADER */
+  .header-inner {
+    padding: 24px 20px;
+  }
+
+  .header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .header p {
+    font-size: 0.8rem;
+  }
+
+  /* SUMMARY */
+  .summary {
+    gap: 10px;
+  }
+
+  .sum-card {
+    padding: 14px 16px;
+    min-width: 100px;
+  }
+
+  .sum-card .num {
+    font-size: 1.5rem;
+  }
+
+  .sum-card .lbl {
+    font-size: 0.6rem;
+  }
+
+  /* FILTERS */
+  .filters {
+    gap: 6px;
+  }
+
+  .filter-btn {
+    font-size: 0.7rem;
+    padding: 6px 12px;
+  }
+
+  /* GRID */
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* TEAM HEADER */
+  .team-header {
+    padding: 16px;
+  }
+
+  .team-title {
+    font-size: 1rem;
+  }
+
+  /* 👉 CLAVE: stats en 2 filas */
+  .team-stats-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .stat-pill {
+    flex: 1 1 48%;
+    padding: 6px;
+  }
+
+  .stat-pill .sv {
+    font-size: 0.85rem;
+  }
+
+  .stat-pill .sl {
+    font-size: 0.55rem;
+  }
+
+  /* BODY */
+  .team-body {
+    padding: 12px;
+  }
+
+  .player-name {
+    font-size: 0.75rem;
+  }
+
+  .player-age {
+    font-size: 0.65rem;
+  }
+
+  .vl-badge {
+    font-size: 0.6rem;
+    padding: 2px 6px;
+  }
+
+  .gender-label {
+    font-size: 0.6rem;
+  }
+
+  /* LEGEND */
+  .legend {
+    gap: 12px;
+  }
+
+  .legend-item {
+    font-size: 0.7rem;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -333,13 +454,14 @@
     <div class="team-body">
       <div class="gender-section">
         <div class="gender-label"><span>👦</span> Hombres</div>
-        <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Aaron Antonio Lanza Gutiérrez</div><div class="player-right"><span class="player-age">16</span><span class="vl-badge vl1">VL1</span></div></div>
+        <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Joshua Moreira Hernández</div><div class="player-right"><span class="player-age">20</span><span class="vl-badge vl1">VL1</span></div></div>
         <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Allan Ricardo Castro Vargas</div><div class="player-right"><span class="player-age">19</span><span class="vl-badge vl1">VL1</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Julián Aragonés Cordero</div><div class="player-right"><span class="player-age">13</span><span class="vl-badge vl2">VL2</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Derek Steve Méndez Castro</div><div class="player-right"><span class="player-age">16</span><span class="vl-badge vl2">VL2</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Wilhem Alvarado Montero</div><div class="player-right"><span class="player-age">18</span><span class="vl-badge vl2">VL2</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Jason Steven Araya Gamboa</div><div class="player-right"><span class="player-age">19</span><span class="vl-badge vl2">VL2</span></div></div>
-        <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Joshua Moreira Hernández</div><div class="player-right"><span class="player-age">20</span><span class="vl-badge vl2">VL2</span></div></div>
+        <div class="player-row" data-vl="3" data-gender="H"><div class="player-name">Alejandro Moncada Madrigal</div><div class="player-right"><span class="player-age">13</span><span class="vl-badge vl3">VL3</span></div></div>
+
       </div>
       <div class="gender-section">
         <div class="gender-label"><span>👧</span> Mujeres</div>
@@ -368,9 +490,9 @@
     <div class="team-body">
       <div class="gender-section">
         <div class="gender-label"><span>👦</span> Hombres</div>
+        <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Andrey Rodríguez Chacón</div><div class="player-right"><span class="player-age">25</span><span class="vl-badge vl1">VL1</span></div></div>
         <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Santiago Alonso Pérez Lumbi</div><div class="player-right"><span class="player-age">16</span><span class="vl-badge vl1">VL1</span></div></div>
         <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Sebastian Madrigal Argüello</div><div class="player-right"><span class="player-age">16</span><span class="vl-badge vl1">VL1</span></div></div>
-        <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Pablo Pérez Lumbi</div><div class="player-right"><span class="player-age">18</span><span class="vl-badge vl1">VL1</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Luis Esteban Sanchez Martínez</div><div class="player-right"><span class="player-age">14</span><span class="vl-badge vl2">VL2</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Kevin Josué Chinchilla Mejía</div><div class="player-right"><span class="player-age">20</span><span class="vl-badge vl2">VL2</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Samuel Andrés Oviedo Jarquín</div><div class="player-right"><span class="player-age">20</span><span class="vl-badge vl2">VL2</span></div></div>
@@ -508,7 +630,7 @@
     <div class="team-body">
       <div class="gender-section">
         <div class="gender-label"><span>👦</span> Hombres</div>
-        <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Andrey Rodríguez Chacón</div><div class="player-right"><span class="player-age">25</span><span class="vl-badge vl1">VL1</span></div></div>
+        <div class="player-row" data-vl="1" data-gender="H"><div class="player-name">Pablo Pérez Lumbi</div><div class="player-right"><span class="player-age">18</span><span class="vl-badge vl1">VL1</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Isaac David Matamoros Segura</div><div class="player-right"><span class="player-age">13</span><span class="vl-badge vl2">VL2</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Matthew Morales Castro</div><div class="player-right"><span class="player-age">13</span><span class="vl-badge vl2">VL2</span></div></div>
         <div class="player-row" data-vl="2" data-gender="H"><div class="player-name">Mario</div><div class="player-right"><span class="player-age">16</span><span class="vl-badge vl2">VL2</span></div></div>
@@ -531,9 +653,9 @@
 </div><!-- end grid -->
 
 <div class="legend">
-  <div class="legend-item"><div class="legend-dot" style="background:#94a3b8"></div> VL1 — Nivel básico</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#94a3b8"></div> VL1 — Nivel alto</div>
   <div class="legend-item"><div class="legend-dot" style="background:#60a5fa"></div> VL2 — Nivel medio</div>
-  <div class="legend-item"><div class="legend-dot" style="background:#f87171"></div> VL3 — Nivel alto</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#f87171"></div> VL3 — Nivel básico</div>
 </div>
 
 <script>
